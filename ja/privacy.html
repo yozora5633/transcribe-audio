@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transcribe Audio プライバシーポリシー</title>
+<style>:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0 auto;padding:2rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.9;max-width:44rem;background:#fff;color:#1a1a1a}
+@media(prefers-color-scheme:dark){body{background:#141414;color:#e8e8e8}}
+h1{font-size:1.6rem;line-height:1.4;margin:0 0 .5rem;padding-bottom:.75rem;border-bottom:2px solid currentColor}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid rgba(128,128,128,.35)}
+p{margin:.9rem 0}
+.para{margin:.9rem 0 .9rem 1.7rem;text-indent:-1.7rem}
+.item{margin:.7rem 0 .7rem 2.8rem;text-indent:-1.4rem}
+.date{opacity:.7;font-size:.9rem}
+.note{opacity:.75;font-size:.92rem;border-left:3px solid rgba(128,128,128,.4);padding-left:.9rem;margin:1rem 0}
+ul{padding-left:1.4rem}
+li{margin:.6rem 0}
+a{color:inherit}
+hr{border:0;border-top:1px solid rgba(128,128,128,.3);margin:2.5rem 0}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.3);opacity:.7;font-size:.88rem}</style>
+</head>
+<body>
+<h1>Transcribe Audio プライバシーポリシー</h1>
+<p class="date">最終更新日: 2026年9月4日</p>
+<hr>
+<h2>1. 基本方針</h2>
+<p class="para">1.　開発者は，Transcribe Audio（以下「本アプリ」という．）の利用に関して，利用者の個人情報を収集しない．</p>
+<p class="para">2.　本アプリは，利用者の行動を追跡せず，広告識別子を利用せず，解析基盤を組み込んでいない．</p>
+<p class="para">3.　開発者は，本アプリのためのサーバーを有しない．録音・文字起こし・履歴・辞書は，すべて利用者の端末内に保存される．</p>
+<p class="para">4.　前3項にかかわらず，利用者が Apple との診断情報の共有を有効にしている場合，開発者は，Apple を通じて，個人を特定しない範囲の障害報告又は統計を受け取ることがある．これは Apple が収集するものであり，本アプリが収集するものではない．</p>
+<h2>2. 開発者が収集しない情報</h2>
+<p>開発者は，次の各号に掲げる情報を含め，利用者に関する一切の情報を収集しない．</p>
+<p class="item">一　氏名，住所，電話番号，メールアドレスその他の連絡先</p>
+<p class="item">二　録音した音声及びその文字起こしの内容</p>
+<p class="item">三　辞書に登録した語句</p>
+<p class="item">四　利用者が設定した API キー</p>
+<p class="item">五　位置情報</p>
+<p class="item">六　広告識別子（IDFA）その他の端末識別子</p>
+<p class="item">七　利用状況の統計又は解析情報</p>
+<h2>3. 端末内に保存される情報</h2>
+<p class="para">1.　本アプリは，次の各号に掲げる情報を利用者の端末内に保存する．</p>
+<p class="item">一　録音した音声及び取り込んだ音声ファイル</p>
+<p class="item">二　文字起こしの本文，履歴及び書き出したファイル</p>
+<p class="item">三　辞書に登録した語句</p>
+<p class="item">四　各種設定の内容</p>
+<p class="item">五　動作の記録（不具合の原因を確認するためのもの．音声及び文字起こしの内容を含まない）</p>
+<p class="para">2.　前項の情報のファイルには，iOS のファイル保護（ロック中の暗号化）を適用している．API キーは端末の Keychain（暗号化領域）にのみ保存される．Face ID 等によるアプリロックを設定することもできる．</p>
+<p class="para">3.　データ保存期間を設定した場合，期間を過ぎた音声・書き出しファイル・履歴等は自動的に削除される．第1項の情報は，本アプリ内又はファイル App の操作により削除することができ，本アプリを端末から削除した場合，端末内の当該情報も併せて削除される．</p>
+<p class="para">4.　開発者は，第1項の情報を取得することも閲覧することもできない．ただし，利用者が端末のバックアップ機能を利用している場合，その一部の複製がバックアップ先に保存されることがある．</p>
+<h2>4. 外部への送信が発生する場合</h2>
+<p>次の各号に掲げる場合に限り，端末の外への通信が発生する．</p>
+<p class="para">1.　利用者が自らの OpenAI API キーを設定した場合，利用者の指示に基づき，次のデータが OpenAI（api.openai.com）へ送信される．</p>
+<p class="item">一　音声認識に OpenAI 方式を使う場合の音声データ（分割したもの）．新世代モデルを使う場合は，辞書に登録した語句も認識の手がかりとして併せて送信される</p>
+<p class="item">二　録音のライブ文字起こし（API キー設定時の既定）における録音中の音声．録音画面で切ると端末内の認識になり，送信は発生しない</p>
+<p class="item">三　文字起こし後の照合・話者の判定等における文字起こしの本文，辞書に登録した語句，及び声の高さ等の数値の特徴（音声そのものは送らない）</p>
+<p class="para">2.　前項の処理は，API キーが設定されている間，認識方式の選択にかかわらず動作する．外部への送信を完全に止めるには，設定画面から API キーを削除すればよい．送信されたデータの取扱いは，OpenAI のプライバシーポリシー及び利用規約の定めるところによる．API キーは OpenAI への認証以外には使用されない．</p>
+<p class="para">3.　「iOS 標準」方式を選んだ場合，OS のバージョンや設定によっては，OS の音声認識機能が音声を Apple のサーバーで処理することがある．「完全オンデバイス」をオンにすると，端末内の処理に限定できる．</p>
+<p class="para">4.　次の各号に掲げる通信には，録音及び文字起こしの内容は含まれない．</p>
+<p class="item">一　Whisper モデルの初回ダウンロード（Hugging Face）</p>
+<p class="item">二　iOS 標準方式の音声認識アセットのダウンロード（Apple）</p>
+<p class="item">三　App Store での購入・復元の処理（OS の StoreKit が Apple と直接通信する）</p>
+<p class="para">5.　利用者が保存先又は共有相手に iCloud Drive 等のクラウドを自ら選んだ場合は，その選択先へデータが複製される．</p>
+<h2>5. 端末の機能の利用目的</h2>
+<p>本アプリは，次の各号に掲げる目的のために端末の機能を利用する．利用の可否は，利用者が端末の設定において変更することができる．</p>
+<p class="item">一　マイク　面談・会話の録音と，そのライブ文字起こしのため</p>
+<p class="item">二　音声認識　音声を文字に変換するため．設定によっては Apple のサーバーで処理されることがある</p>
+<p class="item">三　Face ID 等の生体認証　アプリロックのため．認証の情報は端末内で処理され，本アプリはこれを取得しない</p>
+<p class="item">四　通知　文字起こしの完了又は失敗を知らせるため</p>
+<h2>6. 第三者への提供</h2>
+<p>開発者は，利用者に関する情報を取得しないため，これを第三者に提供することはない．第4条第1項の OpenAI への送信は，利用者が自ら API キーを設定して行う利用者の指示に基づくものである．</p>
+<h2>7. 広告</h2>
+<p>現在の配布ビルドに広告は含まれていない．将来，広告を導入する場合も，興味関心に基づかない配信（非パーソナライズ）のみを使用し，録音・文字起こしの内容や辞書に登録した語句を広告事業者へ送ることはない．</p>
+<h2>8. 言語</h2>
+<p>本方針は日本語を正文とする．他の言語に翻訳して提供する場合において，日本語版と他の言語版との間に相違があるときは，日本語版の解釈が優先する．</p>
+<h2>9. 本方針の変更</h2>
+<p>開発者は，本方針の内容を変更することがある．変更した場合は，本ページを更新し，最終更新日を改める．</p>
+<h2>10. 問合せ</h2>
+<p>本方針に関する問合せは，次の連絡先による．</p>
+<p>電子メール　<a href="mailto:transcribe_support@icloud.com">transcribe_support@icloud.com</a></p>
+<footer><a href="./">Transcribe Audio</a></footer>
+</body>
+</html>
