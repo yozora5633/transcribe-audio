@@ -30,6 +30,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 </head>
 <body>
 <nav aria-label="表示言語"><span lang="ja" aria-current="page">日本語</span> · <a href="../en/privacy.html" lang="en" hreflang="en">English</a></nav>
+<nav aria-label="サイト案内"><a href="index.html">ホーム</a><a href="manual.html">説明書</a><a href="manual.html#faq">よくある質問</a><a href="guide.html">ご利用にあたって</a><a href="privacy.html" aria-current="page">プライバシーポリシー</a><a href="support.html">サポート</a></nav>
 <h1>Transcribe Audio プライバシーポリシー</h1>
 <p class="date">最終更新日: 2026年9月11日</p>
 <hr>
@@ -63,14 +64,15 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <p class="item">一　OpenAI による文字起こし又は音声による話者分けを使う場合の音声データ（分割したもの）．両方を併用すると，同じ区間の音声を各処理へ送信する．新世代モデルを使う場合は，辞書に登録した語句も認識の手がかりとして併せて送信される</p>
 <p class="item">二　OpenAI による録音中のライブ文字起こしを使う場合の録音中の音声．録音画面でオフにすると，この音声送信は止まる．対応する OS では端末内のライブ文字起こしを利用でき，非対応の OS では録音のみを保存する</p>
 <p class="item">三　文字起こし後の照合・話者の判定等における文字起こしの本文，辞書に登録した語句，及び声の高さ等の数値の特徴（音声そのものは送らない）</p>
-<p class="para">2.　前項の処理は，API キーの有無，OpenAI の利用範囲及び個別の処理設定に従って動作する．OpenAI への送信を止めるには，設定で「使わない」を選ぶか API キーを削除すればよい．上級者向け設定の「文章だけ」は，音声を送らず，文章の照合・話者の再判定等に必要な本文・辞書登録語・声の数値特徴の送信を許可する．送信されたデータの取扱いは，OpenAI のプライバシーポリシー及び利用規約の定めるところによる．API キーは OpenAI への認証以外には使用されない．</p>
+<p class="para">2.　前項の処理は，API キーの有無，OpenAI の利用範囲及び個別の処理設定に従って動作する．前項の API 処理による OpenAI への送信を止めるには，設定で「OpenAIへの送信を許可」をオフにするか API キーを削除すればよい．上級者向け設定の「文章だけ」は，音声を送らず，文章の照合・話者の再判定等に必要な本文・辞書登録語・声の数値特徴の送信を許可する．送信されたデータの取扱いは，OpenAI のプライバシーポリシー及び利用規約の定めるところによる．API キーは OpenAI への認証以外には使用されない．</p>
 <p class="para">3.　「iOS 標準」方式を選んだ場合，OS のバージョンや設定によっては，OS の音声認識機能が音声を Apple のサーバーで処理することがある．「完全オンデバイス」をオンにすると，端末内の処理に限定できる．</p>
 <p class="para">4.　次の各号に掲げる通信には，録音及び文字起こしの内容は含まれない．</p>
 <p class="item">一　同梱していないWhisper モデル・Tokenizerを利用者が準備する際のダウンロード（Hugging Face）</p>
 <p class="item">二　iOS 標準方式の音声認識アセットのダウンロード（Apple）</p>
 <p class="item">三　App Store での購入・復元の処理（OS の StoreKit が Apple と直接通信する）</p>
-<p class="item">四　利用者が実行する OpenAI の接続テスト．モデル一覧の取得と固定の短文による確認を行う．録音・文字起こしの本文・辞書は送らない．API の少額の利用料が発生することがある．「使わない」の設定中は実行しない</p>
+<p class="item">四　利用者が実行する OpenAI の接続テスト．モデル一覧の取得と固定の短文による確認を行う．録音・文字起こしの本文・辞書は送らない．API の少額の利用料が発生することがある．OpenAIへの送信許可がオフの間は実行しない</p>
 <p class="para">5.　利用者が保存先又は共有相手に iCloud Drive 等のクラウドを自ら選んだ場合は，その選択先へデータが複製される．</p>
+<p class="para">6.　利用者が任意に OS の作文ツールを使用する場合，選択した機能に応じて，文章や入力した指示が Apple 又は ChatGPT（OpenAI）による処理のため端末外へ送信されることがある．この機能は本アプリの OpenAI API キーを使用せず，第2項の利用範囲の設定とは別に動作する．作文ツール及び ChatGPT の利用可否や送信時の確認は OS 側で管理され，送信された情報には利用するサービスのプライバシーポリシー及び利用条件が適用される．<a href="https://www.apple.com/legal/privacy/data/ja/chatgpt-extension/">AppleのChatGPT拡張の説明</a>も参照されたい．</p>
 <h2>5. 端末の機能の利用目的</h2>
 <p>本アプリは，次の各号に掲げる目的のために端末の機能を利用する．利用の可否は，利用者が端末の設定において変更することができる．</p>
 <p class="item">一　マイク　面談・会話の録音と，そのライブ文字起こしのため</p>

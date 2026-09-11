@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transcribe Audio — User Guide</title>
+<style>:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0 auto;padding:2rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.9;max-width:44rem;background:#fff;color:#1a1a1a}
+@media(prefers-color-scheme:dark){body{background:#141414;color:#e8e8e8}}
+h1{font-size:1.6rem;line-height:1.4;margin:0 0 .5rem;padding-bottom:.75rem;border-bottom:2px solid currentColor}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid rgba(128,128,128,.35)}
+p{margin:.9rem 0}
+.para{margin:.9rem 0 .9rem 1.7rem;text-indent:-1.7rem}
+.item{margin:.7rem 0 .7rem 2.8rem;text-indent:-1.4rem}
+.date{opacity:.7;font-size:.9rem}
+.note{opacity:.75;font-size:.92rem;border-left:3px solid rgba(128,128,128,.4);padding-left:.9rem;margin:1rem 0}
+ul{padding-left:1.4rem}
+li{margin:.6rem 0}
+a{color:inherit}
+hr{border:0;border-top:1px solid rgba(128,128,128,.3);margin:2.5rem 0}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.3);opacity:.7;font-size:.88rem}
+nav{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;margin-bottom:1.75rem;font-size:.95rem}
+nav a{padding:.5rem .25rem;text-underline-offset:.2em}
+a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+details{margin:1rem 0;border:1px solid #8886;border-radius:.75rem;padding:.8rem 1rem}summary{font-weight:600;cursor:pointer;padding:.4rem 0}summary:focus-visible{outline:2px solid currentColor}h3{font-size:1rem}.choice{border-left:3px solid #8888;padding-left:1rem;margin:1.5rem 0}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+<link rel="canonical" href="https://yozora5633.github.io/transcribe-audio/en/manual.html">
+<link rel="alternate" hreflang="ja" href="https://yozora5633.github.io/transcribe-audio/ja/manual.html">
+<link rel="alternate" hreflang="en" href="https://yozora5633.github.io/transcribe-audio/en/manual.html">
+</head>
+<body>
+<nav aria-label="Language"><span lang="en" aria-current="page">English</span> · <a href="../ja/manual.html" lang="ja" hreflang="ja">日本語</a></nav>
+<nav aria-label="Site navigation"><a href="index.html">Home</a><a href="manual.html" aria-current="page">User Guide</a><a href="manual.html#faq">FAQ</a><a href="guide.html">Before You Use</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+<h1>Transcribe Audio User Guide</h1>
+<p class="date">Updated September 11, 2026</p>
+<p>Start by recording or selecting an audio file. The default Whisper setup works without an API key, and the highest-quality model is included in the app.</p>
+<nav aria-label="Contents"><a href="#start">Get started</a><a href="#review">Review and save</a><a href="#models">Choose a method</a><a href="#speakers">Speakers</a><a href="#openai">OpenAI settings</a><a href="#writing">Writing Tools</a><a href="#storage">Manage data</a><a href="#faq">FAQ</a></nav>
+<h2 id="start">1. Start a transcription</h2>
+<p>If settings feel complicated, tap Use Recommended Whisper Settings on the home screen. This selects the highest-quality on-device transcription and stops sending to OpenAI. Choose a speaker count if needed; speaker labels use a separate on-device estimator. Your API key, recordings, and history are retained.</p>
+<h3>Record now</h3><ol><li>Choose Record and Transcribe on the home screen.</li><li>Start recording, then stop when finished.</li><li>Choose Use This Recording to return home, then start transcription.</li></ol>
+<h3>Use an existing recording</h3><ol><li>Choose an audio file on the home screen using Files.</li><li>Check the filename and start transcription. Download files stored in the cloud first.</li></ol>
+<p class="note">Text shown while recording is a preview. Transcription after recording is a separate step. Keep the app in the foreground until it finishes.</p>
+<h2 id="review">2. Review, copy, and save</h2>
+<p>Read the full transcript and play the original audio in Segments. Use the pencil button to edit text or speaker names. A review marker indicates a possible error, not a confirmed mistake.</p>
+<p>Use Copy &amp; Save to copy, export, or share the text. Completed results can also be opened from History. Check important numbers, names, and negations against the original audio.</p>
+<h2 id="models">3. Choose a recognition method</h2>
+<p>The app includes an interactive choice guide under How to Use → FAQ → Which model should I use?</p>
+<div class="choice"><h3>I do not want extra API charges</h3><ul><li><strong>Whisper, highest quality:</strong> Use the default setup for on-device speech recognition.</li><li><strong>iOS built-in:</strong> Uses Apple speech recognition. Depending on settings and availability, Apple servers may be used.</li></ul><p>Adding OpenAI API features incurs separate API charges. Network charges depend on your connection plan.</p></div>
+<div class="choice"><h3>I am willing to pay API charges</h3><ul><li>Use GPT-Transcribe for the transcript when speaker labels are unnecessary.</li><li>Use Diarize to obtain text, speaker labels, and utterance times from one model.</li><li>Combine GPT-Transcribe and Diarize to recognize the text with a separate model as well. Sending the same audio to both increases API costs.</li></ul><p>Accuracy varies with recording conditions.</p></div>
+<details><summary>Compare results from multiple engines</summary><p>When combining Whisper and iOS recognition, the app automatically compares their results. You do not need to add a separate processing step afterward.</p><p>With OpenAI transmission off, comparison takes place on-device. Supported devices can use Apple Intelligence; otherwise, text similarity is compared and alternative candidates are shown while retaining the base transcript. This is separate from the ChatGPT extension.</p><p>Processing takes longer, and accuracy is not guaranteed to improve. Check remaining differences against the original audio. Refining the text with Writing Tools is optional.</p></details>
+<h2 id="speakers">4. Separate speakers</h2>
+<p>Select one person with no speaker separation to omit labels. Auto estimates the count; selecting a count caps the number of speakers in the result. A selected count does not guarantee accurate identification.</p>
+<p>Whisper itself only transcribes text and does not identify speakers. iOS speech recognition also does not return speaker identities; the app can add its own estimation. OpenAI offers Diarize for speaker separation. Similar voices and simultaneous speech can cause mistakes with any approach.</p>
+<h2 id="openai">5. Where OpenAI is used and how to stop it</h2>
+<p>Allow sending to OpenAI changes transmission permission only. After adding a key, choose the recognition method and features you want. Usage and controls shows the enabled uses and their off buttons.</p>
+<p><strong>To stop all app API transmissions:</strong> Turn off Allow sending to OpenAI. This also cancels any transcription in progress, while retaining your key and other settings. OpenAI live display stops, but recording continues.</p>
+<p>Whisper with one speaker can still use OpenAI for optional re-listening decisions or live text display while recording. These are separate settings from the speech recognition method.</p>
+<h3>Create an API key and add credit</h3><ol><li>Check payment methods and credit terms in <a href="https://platform.openai.com/settings/organization/billing/overview">OpenAI billing</a>.</li><li>Create a key under <a href="https://platform.openai.com/api-keys">API keys</a>.</li><li>Open API Key in the app’s settings, paste the key, and save it. Allow sending to OpenAI to use Test Connection and check access.</li></ol>
+<p>API fees are separate from the app price and ChatGPT plans. The connection test checks the model list and sends a fixed short sentence; it does not retrieve your balance. A small API fee may apply. Check spending and usage on <a href="https://platform.openai.com/usage">OpenAI’s usage page</a>.</p>
+<p>Keys are encrypted in the iOS Keychain. The developer’s information site is static GitHub Pages content with no API-key submission form or receiving service. The app does not send your key to the developer. See the <a href="privacy.html">Privacy Policy</a>.</p>
+<h2 id="writing">6. Refine text with Writing Tools</h2>
+<p>Choose Copy &amp; Save → Refine with Writing Tools to open a separate draft. Your original transcript stays unchanged. Copy or save the refined draft separately.</p>
+<p>Writing Tools and ChatGPT may be available depending on your device and OS settings. This feature does not use the app’s API key or incur API charges. Free and signed-out use has limits; ChatGPT sets usage limits and paid-plan terms.</p>
+<p>Writing Tools transmission follows OS settings, separately from the app’s OpenAI permission. See <a href="https://support.apple.com/guide/iphone/iph00fd3c8c2/ios">Apple’s instructions</a>.</p>
+<h2 id="storage">7. Manage recordings, history, and settings</h2>
+<p>Recordings are stored under Transcribe Audio/Recordings in Files. Selecting another destination creates an additional copy. Deleting a history entry removes its transcript, not the original recording. Manage recordings and destination copies separately.</p>
+<p>Open Settings → Recording and Data Storage to change retention and app lock. New installations use 90-day retention. Existing data follows the choice made during migration. Copies in other folders are outside automatic deletion. Read the deletion confirmation before shortening retention.</p>
+<p>Closing the current audio returns home to its initial state. Resetting transcription settings restores highest-quality Whisper, no speaker separation, and no OpenAI use. Neither action deletes saved data. Resetting also retains your key, dictionaries, retention, and app lock.</p>
+<h2 id="faq">8. Frequently asked questions</h2>
+<details><summary>Do I need a manual extra step with Whisper plus iOS recognition?</summary><p>No. Comparison is automatic. Check remaining differences against the original audio. Writing Tools is optional. <a href="#models">Choose a method</a></p></details>
+<details><summary>Why is OpenAI used with Whisper and one speaker?</summary><p>Optional re-listening decisions or live display may still be enabled. See <a href="#openai">Usage and controls</a>.</p></details>
+<details><summary>Can I work completely offline?</summary><p>The default highest-quality Whisper model is included and transcribes on-device. Check the home-screen status. Retrieving cloud files or syncing destination copies requires a separate connection.</p></details>
+<details><summary>Why can’t I start recording?</summary><p>Check microphone permission and available storage. Follow any settings link shown on the recording screen.</p></details>
+<details><summary>Which audio files and lengths are supported?</summary><p>Import one audio file at a time. The app uses formats that iPhone can read and convert. If import fails, export another audio format from the original app. Split audio longer than four hours before using Whisper.</p></details>
+<details><summary>Can I lock the screen or switch apps?</summary><p>Recording can continue while locked, but calls and OS restrictions may interrupt it. Keep the app foregrounded during subsequent transcription. If a resume prompt appears, use the same audio and settings to reuse saved work. Unfinished parts may need to be processed again.</p></details>
+<details><summary>Why does unexpected English or strange text appear?</summary><p>It may be a recognition error, but it can also be an actual English word or name. The app does not automatically delete it. <a href="#review">Listen and edit</a>.</p></details>
+<details><summary>Why does the connection test fail when I have credit?</summary><p>Key permissions, model access, and temporary restrictions can also cause errors. Open the error details. Never include your API key in a support request. <a href="#openai">OpenAI setup</a></p></details>
+<details><summary>Can I use English?</summary><p>Display Language in Settings opens the iOS per-app language setting. Display language and audio language are separate. Current audio processing is designed for Japanese; not every processing path supports English audio.</p></details>
+<details><summary>Does deleting history also delete the recording?</summary><p>No. Original recordings and copies in other folders remain. Manage each separately. <a href="#storage">Manage data</a></p></details>
+<footer><a href="./">Transcribe Audio</a></footer>
+</body>
+</html>

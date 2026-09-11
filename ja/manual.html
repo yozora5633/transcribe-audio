@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transcribe Audio — 説明書</title>
+<style>:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0 auto;padding:2rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.9;max-width:44rem;background:#fff;color:#1a1a1a}
+@media(prefers-color-scheme:dark){body{background:#141414;color:#e8e8e8}}
+h1{font-size:1.6rem;line-height:1.4;margin:0 0 .5rem;padding-bottom:.75rem;border-bottom:2px solid currentColor}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid rgba(128,128,128,.35)}
+p{margin:.9rem 0}
+.para{margin:.9rem 0 .9rem 1.7rem;text-indent:-1.7rem}
+.item{margin:.7rem 0 .7rem 2.8rem;text-indent:-1.4rem}
+.date{opacity:.7;font-size:.9rem}
+.note{opacity:.75;font-size:.92rem;border-left:3px solid rgba(128,128,128,.4);padding-left:.9rem;margin:1rem 0}
+ul{padding-left:1.4rem}
+li{margin:.6rem 0}
+a{color:inherit}
+hr{border:0;border-top:1px solid rgba(128,128,128,.3);margin:2.5rem 0}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.3);opacity:.7;font-size:.88rem}
+nav{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;margin-bottom:1.75rem;font-size:.95rem}
+nav a{padding:.5rem .25rem;text-underline-offset:.2em}
+a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+details{margin:1rem 0;border:1px solid #8886;border-radius:.75rem;padding:.8rem 1rem}summary{font-weight:600;cursor:pointer;padding:.4rem 0}summary:focus-visible{outline:2px solid currentColor}h3{font-size:1rem}.choice{border-left:3px solid #8888;padding-left:1rem;margin:1.5rem 0}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+<link rel="canonical" href="https://yozora5633.github.io/transcribe-audio/ja/manual.html">
+<link rel="alternate" hreflang="ja" href="https://yozora5633.github.io/transcribe-audio/ja/manual.html">
+<link rel="alternate" hreflang="en" href="https://yozora5633.github.io/transcribe-audio/en/manual.html">
+</head>
+<body>
+<nav aria-label="表示言語"><span lang="ja" aria-current="page">日本語</span> · <a href="../en/manual.html" lang="en" hreflang="en">English</a></nav>
+<nav aria-label="サイト案内"><a href="index.html">ホーム</a><a href="manual.html" aria-current="page">説明書</a><a href="manual.html#faq">よくある質問</a><a href="guide.html">ご利用にあたって</a><a href="privacy.html">プライバシーポリシー</a><a href="support.html">サポート</a></nav>
+<h1>Transcribe Audio の説明書</h1>
+<p class="date">更新日：2026年9月11日</p>
+<p>まずは録音か音声ファイルを選び，文字起こしを始めてください．初期設定のWhisperはAPIキー不要で，最高品質のモデルもアプリに含まれています．</p>
+<nav aria-label="目次"><a href="#start">はじめる</a><a href="#review">確認・保存</a><a href="#models">モデルを選ぶ</a><a href="#speakers">話者分け</a><a href="#openai">OpenAIの設定</a><a href="#writing">作文ツール</a><a href="#storage">データの管理</a><a href="#faq">FAQ</a></nav>
+<h2 id="start">1．文字起こしを始める</h2>
+<p>設定に迷ったら，ホームの「Whisperのおすすめ設定にする」を押してください．最高品質の端末内文字起こしに揃え，OpenAIへの送信を止めます．話者分けは人数だけ選べ，分ける場合は別の端末内推定を使います．APIキー・録音・履歴は残ります．</p>
+<h3>その場で録音する</h3><ol><li>ホームの「録音して文字起こし」を押します．</li><li>「録音を開始」を押し，終わったら「録音を停止」を押します．</li><li>「この録音を使う」でホームに戻り，「文字起こしを開始」を押します．</li></ol>
+<h3>保存済みの音声を使う</h3><ol><li>ホームの「音声ファイルを選ぶ」から，ファイルAppの音声を選びます．</li><li>ファイル名を確認して「文字起こしを開始」を押します．クラウド上の音声は，先にダウンロードしておいてください．</li></ol>
+<p class="note">録音中に表示される文字は途中経過です．録音後の文字起こしは別の処理です．完了までアプリを前面にしたままお待ちください．</p>
+<h2 id="review">2．確認してコピー・保存する</h2>
+<p>「全文」で文章を読み，「区間（時刻・再生）」で元の音声を聞きます．鉛筆ボタンから本文や話者名を編集できます．「要確認」は誤りの可能性を示す印であり，必ず誤りという意味ではありません．</p>
+<p>「コピー・保存」から文章をコピーしたり，ファイルへ保存・共有したりできます．完了した結果はホームの履歴からも開けます．大切な数値，名前，否定表現は原音声と照合してください．</p>
+<h2 id="models">3．モデルの選び方</h2>
+<p>アプリの「使い方 → よくある質問 → どのモデルを使えばよいですか？」には，質問に答えて選べるフローチャートがあります．</p>
+<div class="choice"><h3>追加のAPI料金をかけたくない</h3><ul><li><strong>Whisper・最高品質：</strong>初期設定のまま使えます．音声認識は端末内で行います．</li><li><strong>iOS標準：</strong>Appleの音声認識を使います．設定や対応状況によってAppleのサーバーを使うことがあります．</li></ul><p>OpenAIのAPIを追加で使えば，その処理には別途API料金がかかります．通信料は回線契約に従います．</p></div>
+<div class="choice"><h3>API料金をかけてもよい</h3><ul><li>話者分けが不要なら，GPT-Transcribeで本文を認識します．</li><li>話者分けも必要なら，Diarizeで本文・話者・発話時刻を得られます．</li><li>本文も別モデルで認識したい場合は，GPT-TranscribeとDiarizeを併用できます．同じ音声を両方へ送るため，API料金が増えます．</li></ul><p>いずれも録音状態によって精度が変わります．</p></div>
+<details><summary>ほかの認識結果とも照合したい方へ</summary><p>WhisperとiOS標準などの併用では，認識結果の照合までアプリが自動で行います．あとから別の処理を追加する操作は不要です．</p><p>OpenAIへの送信がオフなら，照合も端末内で行います．対応端末ではApple Intelligenceを使い，利用できない場合は文章の類似度を比較して，基準の本文を残しながら別候補を示します．これはChatGPT拡張とは別の機能です．</p><p>処理時間は増えます．必ず精度が上がるわけではないため，食い違いが残る箇所は原音声で確認してください．作文ツールによる仕上げは任意です．</p></details>
+<h2 id="speakers">4．話した人を分ける</h2>
+<p>「1人（話者分けなし）」では話者ラベルを付けません．「自動」は人数を推定し，人数を指定した場合は結果の上限として使います．指定人数だけで正確な話者判定が保証されるわけではありません．</p>
+<p>Whisper自体は文字起こし専用で，話者判定はできません．iOS標準認識自体も話者情報を返さず，必要に応じてアプリの追加推定を使います．OpenAIでは話者分け用のDiarizeを選べます．似た声や同時発話では，いずれも取り違えることがあります．</p>
+<h2 id="openai">5．OpenAIの使用箇所と停止方法</h2>
+<p>設定の「OpenAIへの送信を許可」は，送信の許可だけを変更します．キーを登録したら，使いたい文字起こし方式や機能を選んでください．「使用箇所と停止方法」で，現在の設定で使う用途と停止ボタンを確認できます．</p>
+<p><strong>すべてのAPI送信を止めるには：</strong>「OpenAIへの送信を許可」をオフにします．実行中の文字起こしも停止しますが，キーと他の設定は残ります．録音中のOpenAI表示は停止し，録音自体は続きます．</p>
+<p>Whisper・1人でも，任意の「聞き直しの判断」や録音中の文字表示でOpenAIを使う場合があります．音声認識の方式と，録音中の表示・文章処理は別の設定です．</p>
+<h3>APIキーの発行・チャージ</h3><ol><li><a href="https://platform.openai.com/settings/organization/billing/overview">OpenAIの支払い・チャージ画面</a>で支払い方法と条件を確認します．</li><li><a href="https://platform.openai.com/api-keys">API keys</a>でキーを発行します．</li><li>アプリの設定で「APIキー」を開き，キーを貼り付け，「保存」を押します．OpenAIへの送信を許可すると，「接続テスト」で利用可否を確認できます．</li></ol>
+<p>API料金はアプリ代金やChatGPTの契約とは別です．接続テストはモデル一覧と固定の短文で確認するもので，残高額の照会ではありません．少額のAPI料金がかかる場合があります．残高・使用量は<a href="https://platform.openai.com/usage">OpenAIの使用量画面</a>で確認してください．</p>
+<p>キーはiOSのKeychainに暗号化して保存します．開発者の案内サイトは静的なGitHub Pagesで，キーを受け取るフォームや受信処理はありません．アプリもキーを開発者へ送りません．詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください．</p>
+<h2 id="writing">6．作文ツールで文章を整える</h2>
+<p>「コピー・保存 → 作文ツールで整える」で，別の下書きを開きます．元の文字起こしは変わりません．整えた文章は，下書き画面から別にコピー・保存してください．</p>
+<p>対応する端末・OSの設定では，作文ツールやChatGPTを利用できます．この機能はアプリのAPIキーを使わず，API料金も発生しません．無料・未ログインでの利用には制限があり，上限や有料プランの条件はChatGPT側に従います．</p>
+<p>作文ツールの送信はOS側の設定に従い，アプリのOpenAI送信許可とは独立しています．利用方法は<a href="https://support.apple.com/guide/iphone/iph00fd3c8c2/ios">Appleの案内</a>をご覧ください．</p>
+<h2 id="storage">7．録音・履歴・設定を管理する</h2>
+<p>録音はファイルAppの「Transcribe Audio／Recordings」に保存されます．別の保存先を指定すると，そのフォルダにもコピーします．履歴の削除は文字起こし結果の削除で，元の録音は消しません．録音を消す場合は，録音ファイルとコピー先をそれぞれ確認してください．</p>
+<p>「設定 → 録音とデータの保存」で保存期間やアプリロックを変更できます．新規インストールの保存期間は90日です．以前からあるデータは移行時の選択に従います．別フォルダのコピーは自動削除とは別に管理します．期間を短くする場合は，削除対象の確認をよく読んでください．</p>
+<p>「現在の音声を閉じる」は画面を最初の状態へ戻す操作です．「文字起こしの設定を初期値に戻す」はWhisper・最高品質・話者分けなし・OpenAI不使用へ戻す操作です．どちらも保存済みデータを削除しません．初期値へ戻しても，APIキー・辞書・保存期間・アプリロックは残ります．</p>
+<h2 id="faq">8．よくある質問</h2>
+<details><summary>WhisperとiOS標準の併用は，あとで手作業が必要ですか？</summary><p>照合まで自動です．食い違いが残る部分は原音声で確認してください．作文ツールで整える操作は任意です．<a href="#models">モデルの選び方</a></p></details>
+<details><summary>Whisper・1人なのにOpenAIを使うのはなぜ？</summary><p>聞き直し判断や録音中の文字表示が別に有効な場合があります．<a href="#openai">使用箇所と停止方法</a>を確認してください．</p></details>
+<details><summary>完全オフラインで使えますか？</summary><p>初期設定のWhisper最高品質はモデル同梱済みで，端末内で文字起こしできます．ホームの表示で確認できます．クラウド上のファイルの取得や保存先への同期は別途通信します．</p></details>
+<details><summary>録音を始められません</summary><p>マイクの使用許可と端末の空き容量を確認してください．録音画面に案内が出る場合は，そこから設定を開けます．</p></details>
+<details><summary>どの音声ファイルを使えますか？ 長さの制限は？</summary><p>音声ファイルを1つずつ読み込みます．iPhoneで読み込み・変換可能な形式が対象です．読み込めない場合は元のアプリから別形式で書き出してください．Whisperでは4時間を超える音声は分割が必要です．</p></details>
+<details><summary>画面を消したり，他のアプリへ移動したりしても大丈夫？</summary><p>録音はロック中も続けられますが，通話やOSの制限で中断する場合があります．録音後の文字起こしは完了までアプリを前面にしてください．再開の案内が出た場合は，同じ音声と設定で保存済み部分を再利用できます．未完了部分は再処理する場合があります．</p></details>
+<details><summary>日本語の途中に英語や変な文章が出ます</summary><p>誤認識の可能性があります．実際の英語や固有名詞の場合もあるため，自動では削除しません．<a href="#review">元の音声を聞いて修正</a>してください．</p></details>
+<details><summary>残高があるのに接続テストでエラーになります</summary><p>キーの権限，モデルの利用可否，一時的な制限も原因になります．エラーの「詳しく」を確認してください．問い合わせにAPIキーを添付しないでください．<a href="#openai">OpenAIの準備</a></p></details>
+<details><summary>英語で使えますか？</summary><p>設定の「表示言語」からiOSのアプリ別言語設定を開けます．表示言語と音声の認識言語は別です．現在の音声処理は日本語向けで，英語音声の全経路に対応しているわけではありません．</p></details>
+<details><summary>履歴を消したら録音も消えますか？</summary><p>履歴を消しても元の録音や別フォルダのコピーは残ります．それぞれ個別に管理してください．<a href="#storage">データの管理</a></p></details>
+<footer><a href="./">Transcribe Audio</a></footer>
+</body>
+</html>

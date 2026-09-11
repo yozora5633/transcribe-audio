@@ -30,6 +30,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 </head>
 <body>
 <nav aria-label="Language"><a href="../ja/guide.html" lang="ja" hreflang="ja">日本語</a> · <span lang="en" aria-current="page">English</span></nav>
+<nav aria-label="Site navigation"><a href="index.html">Home</a><a href="manual.html">User Guide</a><a href="manual.html#faq">FAQ</a><a href="guide.html" aria-current="page">Before You Use</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
 <h1>Before You Use Transcribe Audio</h1>
 <p class="date">Last updated: September 11, 2026</p>
 <hr>
@@ -47,9 +48,10 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <p class="para">3. Words registered in the dictionary are used as clues for recognition, but this does not guarantee that the registered spelling will always be obtained.</p>
 <h2>4. About using the OpenAI API</h2>
 <p class="para">1. Features that use an OpenAI API key can be used by the user contracting with OpenAI themselves, setting the key they obtained, and then choosing the usage scope and individual features. Merely saving the key does not broaden the permitted scope of transmission. API usage fees are settled between the user and OpenAI.</p>
-<p class="para">2. Data sent externally according to the usage scope and individual feature settings is governed by the <a href="privacy.html">Privacy Policy</a>. To stop transmission, delete the key from the Settings screen or set "OpenAI usage scope" to "Do Not Use" ("Text only" does not send audio; it uses text, dictionary entries, and numerical voice features for comparison and similar purposes).</p>
+<p class="para">2. Data sent externally according to the usage scope and individual feature settings is governed by the <a href="privacy.html">Privacy Policy</a>. To stop the App’s API transmissions, delete the key from the Settings screen or turn off "Allow sending to OpenAI" (or choose "Do Not Use" in the advanced usage scope) ("Text only" does not send audio; it uses text, dictionary entries, and numerical voice features for comparison and similar purposes).</p>
 <p class="para">3. Please manage your key at your own responsibility. The key is stored only in the device's Keychain (encrypted area) and is not used for anything other than authentication with OpenAI.</p>
 <p class="para">4. The "Test Connection" checks availability by retrieving the model list and sending a fixed short sentence. It does not send audio, transcription text, or the dictionary. A small API usage fee may be incurred, and it is not a balance inquiry.</p>
+<p class="para">5. After transcription, choose Copy &amp; Save → Refine with Writing Tools to edit a separate draft. On supported configurations, you can use the OS’s Writing Tools and ChatGPT, then copy or save the refined text separately. This does not use the App’s API key or incur API charges. Free and signed-out use has limits; ChatGPT sets usage limits and paid-plan terms. Availability and transmission follow OS settings, separately from the App’s OpenAI usage scope. See <a href="https://support.apple.com/guide/iphone/iph00fd3c8c2/ios">Apple’s setup instructions</a>.</p>
 <h2>5. Handling of data</h2>
 <p class="para">1. Recordings, transcriptions, history, the dictionary, and all other data handled by the App are stored on the user's device. The developer cannot obtain or view them.</p>
 <p class="para">2. The preceding paragraph does not apply when the user sends data outside the device themselves via the share feature or other operations.</p>

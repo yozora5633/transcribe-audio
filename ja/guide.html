@@ -30,6 +30,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 </head>
 <body>
 <nav aria-label="表示言語"><span lang="ja" aria-current="page">日本語</span> · <a href="../en/guide.html" lang="en" hreflang="en">English</a></nav>
+<nav aria-label="サイト案内"><a href="index.html">ホーム</a><a href="manual.html">説明書</a><a href="manual.html#faq">よくある質問</a><a href="guide.html" aria-current="page">ご利用にあたって</a><a href="privacy.html">プライバシーポリシー</a><a href="support.html">サポート</a></nav>
 <h1>Transcribe Audio ご利用にあたって</h1>
 <p class="date">最終更新日: 2026年9月11日</p>
 <hr>
@@ -47,9 +48,10 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <p class="para">3.　辞書に登録した語句は認識の手がかりとして用いられるが，登録どおりの表記が常に得られることを保証するものではない．</p>
 <h2>4. OpenAI API の利用について</h2>
 <p class="para">1.　OpenAI の API キーを用いる機能は，利用者が OpenAI と自ら契約し，取得したキーを設定したうえで利用範囲と各機能を選ぶことにより使用できる．キーの保存だけでは送信の許可範囲は広がらない．API の利用料は，利用者と OpenAI との間で精算される．</p>
-<p class="para">2.　利用範囲と各機能の設定に応じて外部へ送信されるデータについては，<a href="privacy.html">プライバシーポリシー</a>の定めるところによる．送信を止めるには，設定画面からキーを削除するか，「OpenAI の利用範囲」を「使わない」にすればよい（「文章だけ」は音声を送らず，文章・辞書登録語・声の数値特徴を照合等に用いる）．</p>
+<p class="para">2.　利用範囲と各機能の設定に応じて外部へ送信されるデータについては，<a href="privacy.html">プライバシーポリシー</a>の定めるところによる．本アプリの API 送信を止めるには，設定画面からキーを削除するか，「OpenAI の利用範囲」を「使わない」にすればよい（「文章だけ」は音声を送らず，文章・辞書登録語・声の数値特徴を照合等に用いる）．</p>
 <p class="para">3.　キーの管理は利用者の責任において行われたい．キーは端末の Keychain（暗号化領域）にのみ保存され，OpenAI への認証以外には使用されない．</p>
 <p class="para">4.　「接続テスト」は，モデル一覧の取得と固定短文の送信により利用可否を確認する．音声・文字起こしの本文・辞書は送らない．少額の API 利用料が発生することがあり，残高額の照会ではない．</p>
+<p class="para">5.　文字起こし後の「コピー・保存」から「作文ツールで整える」を選ぶと，元の文字起こしとは別の下書きを編集できる．対応する環境では OS の作文ツール及び ChatGPT を利用でき，整えた文章は別にコピー・保存する．本アプリの API キーを使わず，API 料金は発生しない．無料・未ログイン利用には制限があり，利用上限及び有料プランの条件は ChatGPT 側に従う．利用可否と送信は OS 側の設定に従い，本アプリの OpenAI 利用範囲とは別に扱われる．<a href="https://support.apple.com/guide/iphone/iph00fd3c8c2/ios">Appleの設定手順</a>を参照されたい．</p>
 <h2>5. データの取扱い</h2>
 <p class="para">1.　録音，文字起こし，履歴，辞書その他本アプリが取り扱うデータは，すべて利用者の端末内に保存される．開発者は，これを取得することも閲覧することもできない．</p>
 <p class="para">2.　利用者が共有機能その他の操作により自らデータを端末外へ送出する場合は，前項の限りでない．</p>
