@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transcribe Audio Privacy Policy</title>
+<style>:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0 auto;padding:2rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.9;max-width:44rem;background:#fff;color:#1a1a1a}
+@media(prefers-color-scheme:dark){body{background:#141414;color:#e8e8e8}}
+h1{font-size:1.6rem;line-height:1.4;margin:0 0 .5rem;padding-bottom:.75rem;border-bottom:2px solid currentColor}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid rgba(128,128,128,.35)}
+p{margin:.9rem 0}
+.para{margin:.9rem 0 .9rem 1.7rem;text-indent:-1.7rem}
+.item{margin:.7rem 0 .7rem 2.8rem;text-indent:-1.4rem}
+.date{opacity:.7;font-size:.9rem}
+.note{opacity:.75;font-size:.92rem;border-left:3px solid rgba(128,128,128,.4);padding-left:.9rem;margin:1rem 0}
+ul{padding-left:1.4rem}
+li{margin:.6rem 0}
+a{color:inherit}
+hr{border:0;border-top:1px solid rgba(128,128,128,.3);margin:2.5rem 0}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.3);opacity:.7;font-size:.88rem}
+nav{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;margin-bottom:1.75rem;font-size:.95rem}
+nav a{padding:.5rem .25rem;text-underline-offset:.2em}
+a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+</style>
+<link rel="canonical" href="https://yozora5633.github.io/transcribe-audio/en/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://yozora5633.github.io/transcribe-audio/ja/privacy.html">
+<link rel="alternate" hreflang="en" href="https://yozora5633.github.io/transcribe-audio/en/privacy.html">
+</head>
+<body>
+<nav aria-label="Language"><a href="../ja/privacy.html" lang="ja" hreflang="ja">日本語</a> · <span lang="en" aria-current="page">English</span></nav>
+<h1>Transcribe Audio Privacy Policy</h1>
+<p class="date">Last updated: September 11, 2026</p>
+<hr>
+<h2>1. Basic policy</h2>
+<p class="para">1. Transcribe Audio (the App) does not automatically send users’ personal information to the developer. If a user voluntarily sends an email or bug report, the developer receives the sender’s email address, the inquiry text, and any attached operation logs.</p>
+<p class="para">2. The App does not track user behavior, does not use advertising identifiers, and has no analytics platform built in.</p>
+<p class="para">3. The developer has no server for the App. Recordings, transcriptions, history, and the dictionary are all stored on the user's device.</p>
+<p class="para">4. Notwithstanding the preceding three paragraphs, if the user has enabled sharing of diagnostic information with Apple, the developer may receive, through Apple, crash reports or statistics that do not identify individuals. This is collected by Apple, not by the App.</p>
+<h2>2. Information the developer does not collect</h2>
+<p>The App does not automatically send the following information to the developer. Voluntary inquiries from users and diagnostic information from Apple are described in Section 1.</p>
+<p class="item">1. Name, address, phone number, email address, and other contact information</p>
+<p class="item">2. Recorded audio and the content of its transcriptions</p>
+<p class="item">3. Words registered in the dictionary</p>
+<p class="item">4. API keys set by the user</p>
+<p class="item">5. Location information</p>
+<p class="item">6. Advertising identifiers (IDFA) and other device identifiers</p>
+<p class="item">7. Usage statistics or analytics information</p>
+<h2>3. Information stored on the device</h2>
+<p class="para">1. The App stores the information listed in the following items on the user's device.</p>
+<p class="item">1. Recorded audio and imported audio files</p>
+<p class="item">2. Transcription text, history, and exported files</p>
+<p class="item">3. Words registered in the dictionary</p>
+<p class="item">4. Various settings</p>
+<p class="item">5. Operation logs (for checking the cause of bugs; they do not include audio or transcription content)</p>
+<p class="para">2. iOS file protection (encryption while locked) is applied to the files of the information in the preceding paragraph. API keys are stored only in the device's Keychain (encrypted area). An app lock using Face ID or similar can also be set.</p>
+<p class="para">3. The data retention period defaults to 90 days for new installations. Existing devices retain their saved settings. During migration, users may choose a 90-day retention period for newly created data only. This migration choice does not retroactively delete existing data. Audio, exported files, history, and the like that have passed the period are automatically deleted. The information in Paragraph 1 can be deleted within the App or via the Files app, and if the App is deleted from the device, the App’s data on that device is deleted with it. However, files copied or exported to a user-selected folder are managed separately and are not deleted by the App’s automatic cleanup or uninstallation.</p>
+<p class="para">4. The developer cannot directly access information stored on your device. Voluntarily submitted inquiries and reports are described in Section 1. Note that if the user uses the device's backup feature, copies of recordings, transcriptions, history, the dictionary, and the like are saved to the backup destination (whether backups occur and their scope follow the user's iOS settings). However, crash reports, copies of imported audio, and downloaded speech recognition models are excluded from backups because they are device-specific or re-obtainable data.</p>
+<h2>4. Cases in which external transmission occurs</h2>
+<p>Communication outside the device occurs only in the cases listed in the following items.</p>
+<p class="para">1. If the user sets their own OpenAI API key and permits transmission in the usage scope and individual processing settings, the following data is sent to OpenAI (api.openai.com). Merely saving the key does not broaden the permitted scope of transmission.</p>
+<p class="item">1. Audio data (split into segments) when using transcription by OpenAI or audio-based speaker diarization. If both are used together, the audio of the same segment is sent to each process. When a new-generation model is used, words registered in the dictionary are also sent along as clues for recognition</p>
+<p class="item">2. Audio being recorded when using live transcription by OpenAI during recording. Turning it off on the recording screen stops this audio transmission. On supported OS versions, on-device live transcription is available; on unsupported OS versions, only the recording is saved</p>
+<p class="item">3. In post-transcription comparison, speaker determination, and the like: the transcription text, words registered in the dictionary, and numerical voice features such as pitch (the audio itself is not sent)</p>
+<p class="para">2. The processes in the preceding paragraph operate according to the presence of an API key, the OpenAI usage scope, and the individual processing settings. To stop transmission to OpenAI, select "Do Not Use" in Settings or delete the API key. The advanced setting "Text only" does not send audio; it permits sending the text, dictionary entries, and numerical voice features needed for text comparison, speaker re-determination, and the like. The handling of transmitted data is governed by OpenAI's privacy policy and terms of use. The API key is not used for anything other than authentication with OpenAI.</p>
+<p class="para">3. If the "iOS built-in" method is selected, depending on the OS version and settings, the OS's speech recognition feature may process audio on Apple's servers. Turning on "Fully on-device" limits processing to the device.</p>
+<p class="para">4. The communications listed in the following items do not include the content of recordings or transcriptions.</p>
+<p class="item">1. Downloads when the user obtains Whisper models and the Tokenizer that are not bundled with the app (Hugging Face)</p>
+<p class="item">2. Downloads of speech recognition assets for the iOS built-in method (Apple)</p>
+<p class="item">3. Purchase and restore processing on the App Store (the OS's StoreKit communicates directly with Apple)</p>
+<p class="item">4. The OpenAI connection test run by the user. It retrieves the model list and verifies with a fixed short sentence. Recordings, transcription text, and the dictionary are not sent. A small API usage fee may be incurred. It is not executed while "Do Not Use" is set</p>
+<p class="para">5. If the user chooses a cloud service such as iCloud Drive as a save destination or share recipient, the data is copied to that chosen destination.</p>
+<h2>5. Purposes of using device features</h2>
+<p>The App uses device features for the purposes listed in the following items. Whether to permit their use can be changed by the user in the device's settings.</p>
+<p class="item">1. Microphone: to record interviews and conversations, and for live transcription of them</p>
+<p class="item">2. Speech Recognition: to convert audio into text. Depending on the settings, it may be processed on Apple's servers</p>
+<p class="item">3. Biometric authentication such as Face ID: for the app lock. Authentication information is processed on the device, and the App does not obtain it</p>
+<p class="item">4. Notifications: to inform you of the completion or failure of transcription</p>
+<h2>6. Provision to third parties</h2>
+<p>The App does not automatically send user information to the developer, and the developer does not automatically forward it to third parties. The transmission to OpenAI under Article 4, Paragraph 1 is carried out based on the user's own instruction, with the user setting their own API key.</p>
+<h2>7. Advertising</h2>
+<p>The currently distributed build contains no advertising. Even if advertising is introduced in the future, only delivery not based on interests (non-personalized) will be used, and the content of recordings or transcriptions, or words registered in the dictionary, will not be sent to advertising providers.</p>
+<h2>8. Language</h2>
+<p>The authoritative text of this policy is in Japanese. If it is provided in translation into other languages and there is any discrepancy between the Japanese version and another language version, the interpretation of the Japanese version prevails.</p>
+<h2>9. Changes to this policy</h2>
+<p>The developer may change the content of this policy. If changes are made, this page will be updated and the last updated date will be revised.</p>
+<h2>10. Contact</h2>
+<p>Inquiries about this policy can be made at the following contact.</p>
+<p>Email <a href="mailto:transcribe_support@icloud.com">transcribe_support@icloud.com</a></p>
+<footer><a href="./">Transcribe Audio</a></footer>
+</body>
+</html>

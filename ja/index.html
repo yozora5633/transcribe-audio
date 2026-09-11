@@ -19,17 +19,26 @@ ul{padding-left:1.4rem}
 li{margin:.6rem 0}
 a{color:inherit}
 hr{border:0;border-top:1px solid rgba(128,128,128,.3);margin:2.5rem 0}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.3);opacity:.7;font-size:.88rem}</style>
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.3);opacity:.7;font-size:.88rem}
+nav{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;margin-bottom:1.75rem;font-size:.95rem}
+nav a{padding:.5rem .25rem;text-underline-offset:.2em}
+a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+</style>
+<link rel="canonical" href="https://yozora5633.github.io/transcribe-audio/ja/index.html">
+<link rel="alternate" hreflang="ja" href="https://yozora5633.github.io/transcribe-audio/ja/index.html">
+<link rel="alternate" hreflang="en" href="https://yozora5633.github.io/transcribe-audio/en/index.html">
 </head>
 <body>
+<nav aria-label="表示言語"><span lang="ja" aria-current="page">日本語</span> · <a href="../en/index.html" lang="en" hreflang="en">English</a></nav>
 <h1>Transcribe Audio とは</h1>
-<p>Transcribe Audio は，面談・会議などの日本語の会話を録音し，文字起こしする iPhone / iPad アプリである．複数の音声認識エンジンの結果を突き合わせて確からしい文章にまとめ，話者の推定や，誤りやすい語の補正候補の提示を行う．</p>
+<p>Transcribe Audio は，面談・会議などの日本語の会話を録音し，文字起こしする iPhone / iPad アプリである．初期設定は，アプリに同梱した最高品質のWhisperによる端末内の文字起こしである．認識できた部分から文章を表示する．設定に応じて複数の認識結果の照合や，話者の推定も利用できる．</p>
 <h2>できること</h2>
 <p>その場で録音するか，音声ファイルを取り込むと，逐語の文字起こしが作られる．区間ごとに原音声を再生して聞き比べながら，本文を修正できる．</p>
 <p>結果はテキストと Markdown で書き出せる．よく使う人名・用語は辞書に登録でき，認識の助けになる．</p>
 <h2>データの扱い</h2>
 <p>録音・文字起こし・履歴・辞書は，すべてあなたの端末の中に保存される．開発者のサーバーは存在せず，開発者が内容を受け取ることも見ることもない．</p>
-<p>より精度の高い認識を使いたい場合は，あなた自身の OpenAI API キーを設定できる．このときに限り，音声や文字起こしが OpenAI へ送信される．キーを削除すれば外部への送信は完全に止まる．</p>
+<p>OpenAIによる文字起こしや話者分けを使いたい場合は，自分のAPIキーを設定し，送信する範囲と機能を選ぶ．API料金は別途かかる．「使わない」を選ぶかキーを削除すると，OpenAIへの送信が止まる．iOS標準認識によるAppleのサーバー利用や，クラウド保存先への同期は別の設定に従う．</p>
+<p class="note">画面表示と案内は日本語・英語に対応する．音声処理は現在日本語向けであり，英語音声の全機能対応を意味するものではない．</p>
 <h2>詳しくは</h2>
 <ul>
 <li><a href="privacy.html">プライバシーポリシー</a></li>
