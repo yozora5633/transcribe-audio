@@ -32,13 +32,15 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <nav aria-label="Language"><a href="../ja/privacy.html" lang="ja" hreflang="ja">日本語</a> · <span lang="en" aria-current="page">English</span></nav>
 <nav aria-label="Site navigation"><a href="index.html">Home</a><a href="manual.html">User Guide</a><a href="manual.html#faq">FAQ</a><a href="guide.html">Before You Use</a><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></nav>
 <h1>Transcribe Audio Privacy Policy</h1>
-<p class="date">Last updated: September 11, 2026</p>
+<p class="date">Last updated: October 6, 2026</p>
 <hr>
 <h2>1. Basic policy</h2>
-<p class="para">1. Transcribe Audio (the App) does not automatically send users’ personal information to the developer. If a user voluntarily sends an email or bug report, the developer receives the sender’s email address, the inquiry text, and any attached operation logs.</p>
-<p class="para">2. The App does not track user behavior, does not use advertising identifiers, and has no analytics platform built in.</p>
-<p class="para">3. The developer has no server for the App. Recordings, transcriptions, history, and the dictionary are all stored on the user's device.</p>
-<p class="para">4. Notwithstanding the preceding three paragraphs, if the user has enabled sharing of diagnostic information with Apple, the developer may receive, through Apple, crash reports or statistics that do not identify individuals. This is collected by Apple, not by the App.</p>
+<p class="para">1. This policy sets out how Transcribe Audio (the App) handles users’ information. Provisions of this policy that concern a particular feature apply to versions of the App that have that feature, when the user uses it.</p>
+<p class="para">2. The App transcribes on the user’s device. Recorded audio and the content of transcriptions are not sent outside the device, except when the user chooses to use an external service under Section 4, Paragraph 2, or sends them out themselves by sharing, exporting, using Writing Tools, sending a bug report, or other operations.</p>
+<p class="para">3. The App does not automatically send users’ personal information to the developer. If a user voluntarily sends an email or bug report, the developer receives the sender’s email address, the inquiry text, and any logs the user chose to attach.</p>
+<p class="para">4. The App does not track user behavior, does not use advertising identifiers, and has no analytics platform built in.</p>
+<p class="para">5. The developer has no server for receiving or storing recordings, transcriptions, history, or the dictionary. They are stored on the user’s device.</p>
+<p class="para">6. Notwithstanding the preceding paragraphs, if the user has enabled sharing of diagnostic information with Apple, the developer may receive, through Apple, crash reports or statistics that do not identify individuals. This is collected by Apple, not by the App.</p>
 <h2>2. Information the developer does not collect</h2>
 <p>The App does not automatically send the following information to the developer. Voluntary inquiries from users and diagnostic information from Apple are described in Section 1.</p>
 <p class="item">1. Name, address, phone number, email address, and other contact information</p>
@@ -48,46 +50,54 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <p class="item">5. Location information</p>
 <p class="item">6. Advertising identifiers (IDFA) and other device identifiers</p>
 <p class="item">7. Usage statistics or analytics information</p>
+<p class="item">8. Payment methods, card numbers, and other payment information</p>
 <h2>3. Information stored on the device</h2>
-<p class="para">1. The App stores the information listed in the following items on the user's device.</p>
+<p class="para">1. The App stores the information listed in the following items on the user’s device.</p>
 <p class="item">1. Recorded audio and imported audio files</p>
 <p class="item">2. Transcription text, history, and exported files</p>
 <p class="item">3. Words registered in the dictionary</p>
 <p class="item">4. Various settings</p>
-<p class="item">5. Operation logs (for checking the cause of bugs; they do not include audio or transcription content)</p>
-<p class="para">2. iOS file protection (encryption while locked) is applied to the files of the information in the preceding paragraph. API keys are stored only in the device's Keychain (encrypted area). An app lock using Face ID or similar can also be set.</p>
-<p class="para">3. The data retention period defaults to 90 days for new installations. Existing devices retain their saved settings. During migration, users may choose a 90-day retention period for newly created data only. This migration choice does not retroactively delete existing data. Audio, exported files, history, and the like that have passed the period are automatically deleted. The information in Paragraph 1 can be deleted within the App or via the Files app, and if the App is deleted from the device, the App’s data on that device is deleted with it. However, files copied or exported to a user-selected folder are managed separately and are not deleted by the App’s automatic cleanup or uninstallation.</p>
-<p class="para">4. The developer cannot directly access information stored on your device. Voluntarily submitted inquiries and reports are described in Section 1. Note that if the user uses the device's backup feature, copies of recordings, transcriptions, history, the dictionary, and the like are saved to the backup destination (whether backups occur and their scope follow the user's iOS settings). However, crash reports, copies of imported audio, and downloaded speech recognition models are excluded from backups because they are device-specific or re-obtainable data.</p>
-<h2>4. Cases in which external transmission occurs</h2>
-<p>Communication outside the device occurs only in the cases listed in the following items.</p>
-<p class="para">1. If the user sets their own OpenAI API key and permits transmission in the usage scope and individual processing settings, the following data is sent to OpenAI (api.openai.com). Merely saving the key does not broaden the permitted scope of transmission.</p>
-<p class="item">1. Audio data (split into segments) when using transcription by OpenAI or audio-based speaker diarization. If both are used together, the audio of the same segment is sent to each process. When a new-generation model is used, words registered in the dictionary are also sent along as clues for recognition</p>
-<p class="item">2. Audio being recorded when using live transcription by OpenAI during recording. Turning it off on the recording screen stops this audio transmission. On supported OS versions, on-device live transcription is available; on unsupported OS versions, only the recording is saved</p>
-<p class="item">3. In post-transcription comparison, speaker determination, and the like: the transcription text, words registered in the dictionary, and numerical voice features such as pitch (the audio itself is not sent)</p>
-<p class="para">2. The processes in the preceding paragraph operate according to the presence of an API key, the OpenAI usage scope, and the individual processing settings. To stop the OpenAI API transmissions described in the preceding paragraph, turn off "Allow sending to OpenAI" in Settings or delete the API key. The advanced setting "Text only" does not send audio; it permits sending the text, dictionary entries, and numerical voice features needed for text comparison, speaker re-determination, and the like. The handling of transmitted data is governed by OpenAI's privacy policy and terms of use. The API key is not used for anything other than authentication with OpenAI.</p>
-<p class="para">3. If the "iOS built-in" method is selected, depending on the OS version and settings, the OS's speech recognition feature may process audio on Apple's servers. Turning on "Fully on-device" limits processing to the device.</p>
-<p class="para">4. The communications listed in the following items do not include the content of recordings or transcriptions.</p>
-<p class="item">1. Downloads when the user obtains Whisper models and the Tokenizer that are not bundled with the app (Hugging Face)</p>
-<p class="item">2. Downloads of speech recognition assets for the iOS built-in method (Apple)</p>
-<p class="item">3. Purchase and restore processing on the App Store (the OS's StoreKit communicates directly with Apple)</p>
-<p class="item">4. The OpenAI connection test run by the user. It retrieves the model list and verifies with a fixed short sentence. Recordings, transcription text, and the dictionary are not sent. A small API usage fee may be incurred. It is not executed while "Do Not Use" is set</p>
+<p class="item">5. Operation logs (for checking the cause of bugs; they do not include audio, but detailed transcription logs may include the recognized text)</p>
+<p class="para">2. iOS file protection is applied to the files of the information in the preceding paragraph, and they are stored in encrypted form. So that recording and logging can continue while the screen is locked, the file being recorded and the operation logs use a protection class that allows writing to continue while the device is locked. When the user uses a feature that requires an API key, the key is stored only in the device’s Keychain (encrypted area). An app lock using Face ID or similar can also be set.</p>
+<p class="para">3. The data retention period defaults to 90 days for new installations. Devices that used an earlier version keep their existing setting, and the user may choose to apply the 90-day period to newly created data only. This choice does not retroactively delete existing data. Audio, exported files, history, and the like that have passed the period are deleted automatically. Operation logs are deleted automatically, oldest first, once they exceed a set age or amount. The information in Paragraph 1 can be deleted within the App or via the Files app, and if the App is deleted from the device, the App’s data on that device is deleted with it. However, files copied or exported to a folder the user chose are managed separately and are not deleted by the App’s automatic cleanup or by uninstalling the App.</p>
+<p class="para">4. The developer cannot directly access information stored on the user’s device. Voluntarily submitted inquiries and reports are described in Section 1. Note that if the user uses the device’s backup feature, copies of recordings, transcriptions, history, the dictionary, and the like are saved to the backup destination (whether backups occur and their scope follow the user’s iOS settings). However, crash reports, copies of imported audio, and downloaded speech recognition models are excluded from backups because they are device-specific or can be obtained again.</p>
+<h2>4. Communication outside the device</h2>
+<p>The App communicates outside the device only in the cases listed in the following paragraphs.</p>
+<p class="para">1. The communications listed in the following items do not include the content of recordings or transcriptions.</p>
+<p class="item">1. Downloads when the user chooses a speech recognition model or similar resource that is not bundled with the App (Hugging Face)</p>
+<p class="item">2. Downloads of resources needed for speech recognition with the “iOS built-in” method (Apple)</p>
+<p class="item">3. Purchases, restoring purchases, and redeeming offer codes on the App Store (the OS’s StoreKit communicates directly with Apple; see Section 5)</p>
+<p class="item">4. A connection test of an external service run by the user. It retrieves the list of models and checks with a fixed short sentence; recordings, transcription text, and the dictionary are not sent. The external service may charge a small usage fee</p>
+<p class="para">2. If the App has features that use an external speech recognition or AI service (such as OpenAI; an “external service”), those features operate only when the user chooses to use them in Settings. When the user does so, the data listed in the following items is sent to that external service (for OpenAI, api.openai.com) to the extent needed for the chosen features. Merely saving an API key does not start any transmission.</p>
+<p class="item">1. Audio data (split into segments) when transcribing with an external service or when separating speakers by voice. Words registered in the dictionary may be sent along as clues for recognition</p>
+<p class="item">2. The audio being recorded, when an external service is used for live transcription during recording</p>
+<p class="item">3. The transcription text, words registered in the dictionary, and numerical voice features such as pitch, when an external service is used for post-transcription comparison, speaker determination, and the like (the audio itself is not sent)</p>
+<p class="para">3. Transmission under the preceding paragraph follows the usage scope the user chose (for example, whether audio is sent or only text) and the settings for each feature. The user can check in the App’s settings what is sent and how to stop it. To stop transmission, stop using the external service in Settings or delete the API key. The API key is not used for anything other than authentication with the external service. The handling of data sent to an external service is governed by that service’s privacy policy and terms of use.</p>
+<p class="para">4. Speech recognition with the “iOS built-in” method uses on-device recognition. Only in versions that have a setting allowing processing off the device, and only when the user chooses that setting, may the OS’s speech recognition feature process audio on Apple’s servers.</p>
 <p class="para">5. If the user chooses a cloud service such as iCloud Drive as a save destination or share recipient, the data is copied to that chosen destination.</p>
-<p class="para">6. If the user chooses to use the OS’s Writing Tools, text and entered instructions may be sent outside the device for processing by Apple or ChatGPT (OpenAI), depending on the selected feature. This feature does not use the App’s OpenAI API key and operates separately from the usage scope setting in Paragraph 2. Availability of Writing Tools and ChatGPT, and confirmation of transmission, are managed by the OS. Information sent is subject to the privacy policy and terms of the service used. See <a href="https://www.apple.com/legal/privacy/data/en/chatgpt-extension/">Apple’s ChatGPT Extension privacy information</a>.</p>
-<h2>5. Purposes of using device features</h2>
-<p>The App uses device features for the purposes listed in the following items. Whether to permit their use can be changed by the user in the device's settings.</p>
-<p class="item">1. Microphone: to record interviews and conversations, and for live transcription of them</p>
-<p class="item">2. Speech Recognition: to convert audio into text. Depending on the settings, it may be processed on Apple's servers</p>
+<p class="para">6. If the user chooses to use the OS’s Writing Tools, text and entered instructions may be sent outside the device for processing by Apple or ChatGPT (OpenAI), depending on the selected feature. This feature does not use the App’s API key and operates separately from the settings in Paragraphs 2 and 3. Availability of Writing Tools and ChatGPT, and confirmation of transmission, are managed by the OS, and information sent is subject to the privacy policy and terms of the service used. See also <a href="https://www.apple.com/legal/privacy/data/en/chatgpt-extension/">Apple’s ChatGPT Extension privacy information</a>.</p>
+<p class="para">7. When the user sends a bug report or inquiry, the content described in Section 1, Paragraph 3 is sent to the developer by the email or sharing method the user chose.</p>
+<h2>5. Purchases</h2>
+<p class="para">1. If the App offers paid features (one-time purchases or subscriptions), their purchase, payment, renewal, cancellation, and refunds are handled through Apple’s App Store. The developer does not receive the user’s name, payment method, card number, or other payment information.</p>
+<p class="para">2. To check whether paid features are available, the App obtains purchase information such as the purchased item, purchase date, expiration date, and transaction identifier through the OS’s StoreKit, and uses it on the device. This information is not sent to any server of the developer.</p>
+<p class="para">3. When an App Store offer code (a code for a special offer) is used, the code is redeemed on the App Store. The developer does not receive the name or contact information of the user who redeemed the code.</p>
+<p class="para">4. Through App Store Connect, the developer receives aggregated information from Apple, such as numbers of downloads and sales and revenue. This does not include information that identifies individual users.</p>
+<h2>6. Purposes of using device features</h2>
+<p>The App uses device features for the purposes listed in the following items. For features that require permission, the user can change the permission in the device’s settings.</p>
+<p class="item">1. Microphone: to record conversations, and for live transcription of them</p>
+<p class="item">2. Speech Recognition: to convert audio into text (see Section 4, Paragraph 4)</p>
 <p class="item">3. Biometric authentication such as Face ID: for the app lock. Authentication information is processed on the device, and the App does not obtain it</p>
 <p class="item">4. Notifications: to inform you of the completion or failure of transcription</p>
-<h2>6. Provision to third parties</h2>
-<p>The App does not automatically send user information to the developer, and the developer does not automatically forward it to third parties. The transmission to OpenAI under Article 4, Paragraph 1 is carried out based on the user's own instruction, with the user setting their own API key.</p>
-<h2>7. Advertising</h2>
+<p class="item">5. Photos: to import the videos the user picks with “Import a video from Photos”. The App does not read any photos or videos other than those picked</p>
+<h2>7. Provision to third parties</h2>
+<p>The App does not automatically send user information to the developer, and the developer does not provide user information to third parties. Transmission to an external service under Section 4, Paragraph 2 is based on the user’s own choice to use it.</p>
+<h2>8. Advertising</h2>
 <p>The currently distributed build contains no advertising. Even if advertising is introduced in the future, only delivery not based on interests (non-personalized) will be used, and the content of recordings or transcriptions, or words registered in the dictionary, will not be sent to advertising providers.</p>
-<h2>8. Language</h2>
+<h2>9. Language</h2>
 <p>The authoritative text of this policy is in Japanese. If it is provided in translation into other languages and there is any discrepancy between the Japanese version and another language version, the interpretation of the Japanese version prevails.</p>
-<h2>9. Changes to this policy</h2>
-<p>The developer may change the content of this policy. If changes are made, this page will be updated and the last updated date will be revised.</p>
-<h2>10. Contact</h2>
+<h2>10. Changes to this policy</h2>
+<p>The developer may change the content of this policy. If changes are made, this page will be updated and the last updated date will be revised. If a new feature adds a new type of information sent outside the device or a new destination, this policy will be revised before the version with that feature is released.</p>
+<h2>11. Contact</h2>
 <p>Inquiries about this policy can be made at the following contact.</p>
 <p>Email <a href="mailto:berried_thymes1y@icloud.com">berried_thymes1y@icloud.com</a></p>
 <footer><a href="./">Transcribe Audio</a></footer>

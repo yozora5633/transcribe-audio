@@ -32,10 +32,10 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <nav aria-label="Language"><a href="../ja/guide.html" lang="ja" hreflang="ja">日本語</a> · <span lang="en" aria-current="page">English</span></nav>
 <nav aria-label="Site navigation"><a href="index.html">Home</a><a href="manual.html">User Guide</a><a href="manual.html#faq">FAQ</a><a href="guide.html" aria-current="page">Before You Use</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
 <h1>Before You Use Transcribe Audio</h1>
-<p class="date">Last updated: September 11, 2026</p>
+<p class="date">Last updated: October 6, 2026</p>
 <hr>
 <h2>1. About this document</h2>
-<p class="para">1. This document is a guide summarizing matters we would like you to know when using Transcribe Audio (hereinafter "the App").</p>
+<p class="para">1. This document is a guide summarizing matters we would like you to know when using Transcribe Audio (hereinafter "the App"). Matters in this document that concern a particular feature apply to versions of the App that have that feature.</p>
 <p class="para">2. This document is not a contract. Regarding the license for the App, if it was obtained through the App Store, the standard Licensed Application End User License Agreement established by Apple Inc. applies.</p>
 <p class="para">3. This document can be viewed on this page at any time.</p>
 <h2>2. Positioning of the App</h2>
@@ -46,26 +46,33 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 <p class="para">1. Speaker estimation is an inference made from voice characteristics and utterance content, and mix-ups can occur. It does not identify individuals in the way voiceprint authentication does.</p>
 <p class="para">2. Items shown as correction candidates merely present possible alternative readings. Whether to adopt them is determined by the user's action.</p>
 <p class="para">3. Words registered in the dictionary are used as clues for recognition, but this does not guarantee that the registered spelling will always be obtained.</p>
-<h2>4. About using the OpenAI API</h2>
-<p class="para">1. Features that use an OpenAI API key can be used by the user contracting with OpenAI themselves, setting the key they obtained, and then choosing the usage scope and individual features. Merely saving the key does not broaden the permitted scope of transmission. API usage fees are settled between the user and OpenAI.</p>
-<p class="para">2. Data sent externally according to the usage scope and individual feature settings is governed by the <a href="privacy.html">Privacy Policy</a>. To stop the App’s API transmissions, delete the key from the Settings screen or turn off "Allow sending to OpenAI" (or choose "Do Not Use" in the advanced usage scope) ("Text only" does not send audio; it uses text, dictionary entries, and numerical voice features for comparison and similar purposes).</p>
-<p class="para">3. Please manage your key at your own responsibility. The key is stored only in the device's Keychain (encrypted area) and is not used for anything other than authentication with OpenAI.</p>
-<p class="para">4. The "Test Connection" checks availability by retrieving the model list and sending a fixed short sentence. It does not send audio, transcription text, or the dictionary. A small API usage fee may be incurred, and it is not a balance inquiry.</p>
-<p class="para">5. After transcription, choose Copy &amp; Save → Refine with Writing Tools to edit a separate draft. On supported configurations, you can use the OS’s Writing Tools and ChatGPT, then copy or save the refined text separately. This does not use the App’s API key or incur API charges. Free and signed-out use has limits; ChatGPT sets usage limits and paid-plan terms. Availability and transmission follow OS settings, separately from the App’s OpenAI usage scope. See <a href="https://support.apple.com/guide/iphone/iph00fd3c8c2/ios">Apple’s setup instructions</a>.</p>
-<h2>5. Handling of data</h2>
+<h2>4. About using external services</h2>
+<p class="para">1. The App transcribes on the device. If the App has features that use an external speech recognition or AI service such as OpenAI (an "external service"), those features are used only when the user chooses to use them in Settings.</p>
+<p class="para">2. Features that use an external service’s API key can be used by the user contracting with the external service themselves, setting the key they obtained, and then choosing the usage scope and individual features. Merely saving the key does not start any transmission. API usage fees are settled between the user and the external service and are separate from the price of the App.</p>
+<p class="para">3. Data sent to external services is governed by the <a href="privacy.html">Privacy Policy</a>. To stop transmission, stop using the external service in Settings or delete the key.</p>
+<p class="para">4. Please manage your key at your own responsibility. The key is stored only in the device's Keychain (encrypted area) and is not used for anything other than authentication with the external service.</p>
+<p class="para">5. An external service’s "Test Connection" checks availability by retrieving the list of models and sending a fixed short sentence. It does not send audio, transcription text, or the dictionary. A small API usage fee may be incurred, and it is not a balance inquiry.</p>
+<p class="para">6. Choose Refine with Writing Tools from the menu on the result screen to edit a draft separate from the original transcription. On supported configurations, you can use the OS’s Writing Tools and ChatGPT, then copy or save the refined text separately. This does not use the App’s API key or incur API charges. Free and signed-out use has limits; ChatGPT sets usage limits and paid-plan terms. Availability and transmission follow OS settings, separately from the App’s external service settings. See <a href="https://support.apple.com/guide/iphone/iph00fd3c8c2/ios">Apple’s setup instructions</a>.</p>
+<h2>5. About purchases</h2>
+<p class="para">1. If the App offers paid features (one-time purchases or subscriptions), their purchase, payment, renewal, cancellation, and refunds are governed by the App Store. The price and what is included are shown in the App and on the App Store before purchase.</p>
+<p class="para">2. A subscription renews automatically each period unless canceled. To cancel, go to Subscriptions under your Apple Account in the device’s Settings. After canceling, you can keep using it until the end of the period already paid for.</p>
+<p class="para">3. Purchased features can be used again on devices signed in with the same Apple Account by using Restore Purchases in the App.</p>
+<p class="para">4. App Store offer codes are redeemed on the App Store or from a screen in the App. The conditions and expiration of each code are as set for that code.</p>
+<p class="para">5. Refund requests follow Apple’s refund procedure. The developer cannot directly refund purchases made through the App Store.</p>
+<h2>6. Handling of data</h2>
 <p class="para">1. Recordings, transcriptions, history, the dictionary, and all other data handled by the App are stored on the user's device. The developer cannot obtain or view them.</p>
-<p class="para">2. The preceding paragraph does not apply when the user sends data outside the device themselves via the share feature or other operations.</p>
+<p class="para">2. The preceding paragraph does not apply when the user sends data outside the device themselves via the share feature or other operations, or when the user chooses to use an external service.</p>
 <p class="para">3. How to delete data and the auto-delete settings are governed by the <a href="privacy.html">Privacy Policy</a>.</p>
-<h2>6. About operation</h2>
+<h2>7. About operation</h2>
 <p class="para">1. The App is provided as is. No guarantee is made regarding its operation or fitness for a particular purpose.</p>
 <p class="para">2. The highest-quality multilingual Whisper model is included in the App. Using other models requires additional downloads, and the quality available may differ depending on the device's free space and performance.</p>
 <p class="para">3. Some or all features of the App may become unavailable due to changes in OS or external service specifications, or for other reasons.</p>
 <p class="para">4. The developer may change the content of the App, or suspend or terminate its provision.</p>
-<h2>7. Language</h2>
+<h2>8. Language</h2>
 <p>The authoritative text of this document is in Japanese. If it is provided in translation into other languages and there is any discrepancy between the Japanese version and another language version, the interpretation of the Japanese version prevails.</p>
-<h2>8. Changes to this document</h2>
+<h2>9. Changes to this document</h2>
 <p>The developer may change the content of this document. If changes are made, this page will be updated and the last updated date will be revised.</p>
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 <p>Inquiries about the App can be made at the following contact.</p>
 <p>Email <a href="mailto:berried_thymes1y@icloud.com">berried_thymes1y@icloud.com</a></p>
 <footer><a href="./">Transcribe Audio</a></footer>
